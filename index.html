@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js"></script>
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body onload="setInitialValues()">
+    <h1 class="page-heading">Woolworths Tech Test</h1>
+    <!-- Tab links -->
+    <div class="categories">
+      <ul>
+        <li class="tablinks" onclick="openCategory(event, 'Entrees')">
+          Entrees
+        </li>
+        <li class="tablinks" onclick="openCategory(event, 'Mains')">Mains</li>
+        <li class="tablinks" onclick="openCategory(event, 'Salads')">Salads</li>
+        <li class="tablinks" onclick="openCategory(event, 'Sides')">Sides</li>
+        <li class="tablinks" onclick="openCategory(event, 'Desserts')">
+          Desserts
+        </li>
+        <li class="tablinks" onclick="openCategory(event, 'Drinks')">Drinks</li>
+      </ul>
+    </div>
+    <div class="filters">
+      <ul>
+        <li>Filter By:</li>
+        <li class="filterlinks" onclick="selectFilter(event, 'All')">All</li>
+        <li class="filterlinks" onclick="selectFilter(event, 'Vegan')">
+          Vegan
+        </li>
+        <li class="filterlinks" onclick="selectFilter(event, 'Vegetarian')">
+          Vegetarian
+        </li>
+        <li class="filterlinks" onclick="selectFilter(event, 'Pescatarian')">
+          Pescatarian
+        </li>
+      </ul>
+    </div>
+
+    <div class="pagelink"><a href="page2.html">Goto Page 2</a></div>
+
+    <!-- Tab content -->
+    <div id="Entrees" class="tabcontent">
+      <h2>Entrees</h2>
+      <div class="recipe-container">
+        <div class="recipe-card">
+          <div
+            style="
+              background: url(https://d2gk7xgygi98cy.cloudfront.net/6267-3-large.jpg)
+                no-repeat 50% 50%;
+              background-size: cover;
+              height: 150px;
+            "
+          ></div>
+          <div class="recipe-card__body">
+            <h1 class="recipe-card__heading">Oatmeal Cookies</h1>
+            <h2 class="recipe-card__subhead">
+              Crunchy around the edges, softer in the center, these oatmeal
+              cookies feature the nutty taste and nubbly texture of oats.
+            </h2>
+            <p class="recipe-card__filter">Vegan</p>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div
+            style="
+              background: url(https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg?cs=srgb&dl=pexels-daria-shevtsova-704569.jpg&fm=jpg)
+                no-repeat 50% 50%;
+              background-size: cover;
+              height: 150px;
+            "
+          ></div>
+          <div class="recipe-card__body">
+            <h1 class="recipe-card__heading">
+              Garlic Prawns With Couscous Salad
+            </h1>
+            <h2 class="recipe-card__subhead">
+              Crunchy around the edges, softer in the center, these oatmeal
+              cookies feature the nutty taste and nubbly texture of oats.
+            </h2>
+            <span class="collectionlink" onclick="addToCollection(event)"
+              >Add to Collection</span
+            >
+            <p class="recipe-card__filter">Vegetarian</p>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div
+            style="
+              background: url(https://images.pexels.com/photos/1358389/pexels-photo-1358389.jpeg?cs=srgb&dl=pexels-lisa-fotios-1358389.jpg&fm=jpg)
+                no-repeat 50% 50%;
+              background-size: cover;
+              height: 150px;
+            "
+          ></div>
+          <div class="recipe-card__body">
+            <h1 class="recipe-card__heading">Butter Chicken</h1>
+            <h2 class="recipe-card__subhead">
+              Crunchy around the edges, softer in the center, these oatmeal
+              cookies feature the nutty taste and nubbly texture of oats.
+            </h2>
+            <span class="collectionlink" onclick="addToCollection(event)"
+              >Add to Collection</span
+            >
+            <p class="recipe-card__filter">Vegan</p>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div
+            style="
+              background: url(https://images.pexels.com/photos/4079520/pexels-photo-4079520.jpeg?cs=srgb&dl=pexels-anna-guerrero-4079520.jpg&fm=jpg)
+                no-repeat 50% 50%;
+              background-size: cover;
+              height: 150px;
+            "
+          ></div>
+          <div class="recipe-card__body">
+            <h1 class="recipe-card__heading">
+              Mushroom Ragu With Parmesan Polenta
+            </h1>
+            <h2 class="recipe-card__subhead">
+              Crunchy around the edges, softer in the center, these oatmeal
+              cookies feature the nutty taste and nubbly texture of oats.
+            </h2>
+            <p class="recipe-card__filter">Vegan</p>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div
+            style="
+              background: url(https://images.pexels.com/photos/262897/pexels-photo-262897.jpeg?cs=srgb&dl=pexels-pixabay-262897.jpg&fm=jpg)
+                no-repeat 50% 50%;
+              background-size: cover;
+              height: 150px;
+            "
+          ></div>
+          <div class="recipe-card__body">
+            <h1 class="recipe-card__heading">One-Pan Italian Bake</h1>
+            <h2 class="recipe-card__subhead">
+              Crunchy around the edges, softer in the center, these oatmeal
+              cookies feature the nutty taste and nubbly texture of oats.
+            </h2>
+            <p class="recipe-card__filter">Pescatarian</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Mains" class="tabcontent">
+      <h2>Mains</h2>
+      <p>London is the capital city of England.</p>
+    </div>
+    <div id="Sides" class="tabcontent">
+      <h2>Sides</h2>
+      <p>London is the capital city of England.</p>
+    </div>
+    <div id="Salads" class="tabcontent">
+      <h2>Salads</h2>
+      <p>London is the capital city of England.</p>
+    </div>
+    <div id="Desserts" class="tabcontent">
+      <h2>Desserts</h2>
+      <p>London is the capital city of England.</p>
+    </div>
+    <div id="Drinks" class="tabcontent">
+      <h2>Drinks</h2>
+      <p>London is the capital city of England.</p>
+    </div>
+  </body>
+</html>
